@@ -1,1 +1,1 @@
-# R-projects
+# Inflation in Scandinavia
