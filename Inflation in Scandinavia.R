@@ -1,4 +1,17 @@
-ggplot(data = data1 , mapping = aes(x = year , y = rate , color = Country)) +
+# libs 
+# install.packages("tidyverse")
+# install.packages("ggthemes")
+
+# Importing the Data
+data1 <- read.csv("europe inflation.csv")
+
+# Cleaning the Data
+data1 <- data1 %>% filter(country == "Norway" | country =="Sweden" |country == "Denmark" | country == "Finland")
+ 
+ 
+
+#plot
+ggplot(data = data1 , mapping = aes(x = year , y = rate , color = country)) +
   geom_line(size = 2) + geom_point(size = 3) + 
   labs(title = "A Decade of Scandinavian Inflation" 
        , x = "Year" 
