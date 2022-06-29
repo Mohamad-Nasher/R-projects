@@ -1,0 +1,26 @@
+ggplot() + geom_sf(data = df ,aes(fill = poverty_rate)) +
+  scale_fill_gradientn(colours = c("#59CD90" , "#3FA7D6", "#EE6352")) +
+  labs(title = "Poverty Rates in Turkey " , caption = "Data Viz By :@AnalystNasher | Data Source :TÜRKSTAT" , fill = "Poverty %") +
+  theme(panel.grid = element_blank() ,
+        panel.background = element_blank() ,
+        plot.title = element_text(size = 25 ,
+                                  colour = "#454955" ,
+                                  face = "bold" , family = "Palatino Linotype",
+                                  hjust = 0.5),
+        plot.caption = element_text(size = 10 ,
+                                    colour = "#454955",
+                                    family = "Palatino Linotype"),
+        axis.text.x = element_blank() ,
+        axis.title.y = element_blank(),
+        axis.ticks.x = element_blank() ,
+        axis.text.y = element_blank() ,
+        axis.ticks.y = element_blank() ,
+        legend.position = "bottom" ,
+        legend.text = element_text(size = 15 ,
+                                   colour = "#454955" ,
+                                   face = "bold" ,
+                                   family = "Palatino Linotype") ,
+        legend.title = element_text(size = 15 ,
+                                    colour = "#454955" ,
+                                    face = "bold" ,
+                                    family = "Palatino Linotype"))
