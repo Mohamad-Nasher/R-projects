@@ -1,6 +1,6 @@
 ggplot() + geom_sf(data = df ,aes(fill = poverty_rate)) +
   scale_fill_gradientn(colours = c("#59CD90" , "#3FA7D6", "#EE6352")) +
-  labs(title = "Poverty Rates in Turkey " , caption = "Data Viz By :@AnalystNasher | Data Source :TÜRKSTAT" , fill = "Poverty %") +
+  labs(title = "Poverty Rates in Turkey " , caption = "Data Viz By :@AnalystNasher | Data Source :TÃœRKSTAT" , fill = "Poverty %") +
   theme(panel.grid = element_blank() ,
         panel.background = element_blank() ,
         plot.title = element_text(size = 25 ,
