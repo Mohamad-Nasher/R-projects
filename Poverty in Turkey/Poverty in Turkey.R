@@ -10,11 +10,11 @@ map <- tr_nuts2
 data <- read.xlsx("poverty.xlsx")
 
 ## Cleaning the Data 
-data <- data %>% drop_na() %>% mutate(code = str_sub(regioin , start = 1 , end = 4))
+data <- data %>% drop_na() %>% mutate(code = str_sub(region , start = 1 , end = 4))
 map <- map %>% rename(code = NUTS2_code)
 
 ## Merge
-df <- innerjoin(map , data , by = "code)
+df <- innerjoin(map , data , by = "code")
 
 ## plot
 ggplot() + geom_sf(data = df ,aes(fill = poverty_rate)) +
