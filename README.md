@@ -1,5 +1,8 @@
 # My R projects
 
+### Inflation in Turkey [Inflation in Turkey](https://github.com/Mohamad-Nasher/R-projects/tree/main/Inflation%20in%20Turkey)
+![](https://github.com/Mohamad-Nasher/R-projects/blob/main/Inflation%20in%20Turkey/Inflation%20in%20Turkey.gif)
+
 
 ### Access to Electricity [Access to Electricity](https://github.com/Mohamad-Nasher/R-projects/tree/main/electricity)
 ![](https://github.com/Mohamad-Nasher/R-projects/blob/main/electricity/electricity.png)
